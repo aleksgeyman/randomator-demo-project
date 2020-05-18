@@ -8,19 +8,20 @@
 
 import UIKit
 
-protocol SelectSceneViewModelProtocol: class {
+protocol SelectSceneViewModelProtocol: class, DataSource {
     
 }
 
 class SelectSceneVC: UIViewController {
     
-    private unowned var viewModel: SelectSceneViewModelProtocol!
+    private var viewModel: SelectSceneViewModelProtocol!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(with: viewModel)
     }
 }
-
 
 // MARK: Scene Factory
 extension SelectSceneVC {
@@ -38,4 +39,19 @@ extension SelectSceneVC: StoryboardInstantiatable {
     static var storyboardName: String {
         return "SelectScene"
     }
+}
+
+extension SelectSceneVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfCells(in: section)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let configurator = viewModel.viewConfigurator(at: indexPath.row, in: indexPath.section)
+        return tableView.configureCell(for: configurator, at: indexPath)
+    }
+}
+
+extension SelectSceneVC: UITableViewDelegate {
+    
 }

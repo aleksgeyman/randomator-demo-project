@@ -14,9 +14,28 @@
                     <view key="view" contentMode="scaleToFill" id="tk2-Zh-MXN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q4S-X8-a4S">
+                                <rect key="frame" x="20" y="104" width="374" height="698"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xgm-4E-eP4" id="UT8-eJ-k2c"/>
+                                    <outlet property="delegate" destination="Xgm-4E-eP4" id="zv6-RT-wCC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9qT-Jx-bMJ" firstAttribute="bottom" secondItem="q4S-X8-a4S" secondAttribute="bottom" constant="60" id="9Ml-JH-fEv"/>
+                            <constraint firstItem="9qT-Jx-bMJ" firstAttribute="trailing" secondItem="q4S-X8-a4S" secondAttribute="trailing" constant="20" id="P7j-gF-XwV"/>
+                            <constraint firstItem="q4S-X8-a4S" firstAttribute="top" secondItem="9qT-Jx-bMJ" secondAttribute="top" constant="60" id="fLR-tc-zym"/>
+                            <constraint firstItem="q4S-X8-a4S" firstAttribute="leading" secondItem="9qT-Jx-bMJ" secondAttribute="leading" constant="20" id="mY1-VM-g2D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9qT-Jx-bMJ"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="q4S-X8-a4S" id="z3k-nk-Jgc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIo-CB-XaW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
