@@ -18,6 +18,9 @@ class AppCoordinator: Coordinator {
         let navController = UINavigationController()
         self.window?.rootViewController = navController
         self.window?.makeKeyAndVisible()
+        
+        let childCoordinator = SelectSceneCoordinator(rootViewControler: navController)
+        addChildCoordinator(childCoordinator)
     }
     
     override func start() {
