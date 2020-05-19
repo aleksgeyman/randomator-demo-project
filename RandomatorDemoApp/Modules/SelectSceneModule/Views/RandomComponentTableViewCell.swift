@@ -9,7 +9,7 @@
 import UIKit
 
 class RandomComponentTableViewCell: UITableViewCell, Configurable {
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
     
     func configure(with data: RandomComponentModel) {
         titleLabel.text = data.title

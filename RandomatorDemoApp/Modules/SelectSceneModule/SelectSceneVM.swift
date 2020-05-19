@@ -9,15 +9,21 @@
 import Foundation
 
 protocol SelectSceneDelegate: Coordinator {
-    
+    func selectionSceneShouldContinueTo(_ randomComponentIndex: Int)
 }
 
 class SelectSceneViewModel: SelectSceneViewModelProtocol {
     typealias RandomComponentCellConfigurator = ViewConfigurator<RandomComponentTableViewCell>
     unowned private let delegate: SelectSceneDelegate
+    private var components: [RandomComponents]!
     
     init(delegate: SelectSceneDelegate) {
         self.delegate = delegate
+    }
+    
+    // MARK: Coordinatable
+    func start() {
+        components = RandomComponents.allCases
     }
     
     // MARK: DataSource
@@ -30,10 +36,16 @@ class SelectSceneViewModel: SelectSceneViewModelProtocol {
     }
     
     func numberOfCells(in section: Int) -> Int {
-        return 5
+        return components.count
     }
     
     func viewConfigurator(at index: Int, in section: Int) -> Configurator {
-        return RandomComponentCellConfigurator(data: RandomComponentModel(title: "ABC"))
+        let dataModel = RandomComponentModel(title: components[index].rawValue)
+        let actionOnTap = { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.delegate.selectionSceneShouldContinueTo(index)
+        }
+        
+        return RandomComponentCellConfigurator(data: dataModel, actionOnTap: actionOnTap)
     }
 }

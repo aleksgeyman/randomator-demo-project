@@ -8,13 +8,18 @@
 
 import UIKit
 
-protocol SelectSceneViewModelProtocol: class, DataSource {
+protocol SelectSceneViewModelProtocol: Coordinatable, DataSource {
     
 }
 
 class SelectSceneVC: UIViewController {
     
-    private var viewModel: SelectSceneViewModelProtocol!
+    private var viewModel: SelectSceneViewModelProtocol! {
+        didSet {
+            viewModel.start()
+        }
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -41,6 +46,7 @@ extension SelectSceneVC: StoryboardInstantiatable {
     }
 }
 
+// MARK: UITableViewDataSource
 extension SelectSceneVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfCells(in: section)
@@ -52,6 +58,9 @@ extension SelectSceneVC: UITableViewDataSource {
     }
 }
 
+// MARK: UITableViewDelegate
 extension SelectSceneVC: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.viewConfigurator(at: indexPath.row, in: indexPath.section).actionOnTap?()
+    }
 }

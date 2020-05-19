@@ -23,4 +23,7 @@ class SelectSceneCoordinator: Coordinator {
 
 extension SelectSceneCoordinator: SelectSceneDelegate {
     
+    func selectionSceneShouldContinueTo(_ randomComponentIndex: Int) {
+        
+    }
 }
