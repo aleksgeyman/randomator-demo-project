@@ -26,6 +26,11 @@ class ResultsSceneVC: UIViewController {
         super.viewDidLoad()
         tableView.register(with: viewModel)
     }
+    
+    private static func configureTabBarIcon() -> UITabBarItem {
+        let image = UIImage(systemName: "list.bullet")
+        return UITabBarItem(title: "Results", image: image, selectedImage: image)
+    }
 }
 
 // MARK: Scene Factory
@@ -35,6 +40,7 @@ extension ResultsSceneVC {
         let viewController = Self.instantiateFromStoryboard()
         let viewModel = ResultsSceneViewModel()
         viewController.viewModel = viewModel
+        viewController.tabBarItem = configureTabBarIcon()
         return viewController
     }
 }

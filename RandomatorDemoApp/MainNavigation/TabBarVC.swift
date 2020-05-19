@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import SimpleTabBarAnimations
 
 class TabBarVC: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBar.barTintColor = .white
     }
 }
 
@@ -19,5 +21,13 @@ class TabBarVC: UITabBarController {
 extension TabBarVC: StoryboardInstantiatable {
     static var storyboardName: String {
         return "MainNavigation"
+    }
+}
+
+// MARK: SimpleTabBarAnimation
+extension TabBarVC: SimpleTabBarAnimation {
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        playAnimation(type: .rotate, for: item)
     }
 }

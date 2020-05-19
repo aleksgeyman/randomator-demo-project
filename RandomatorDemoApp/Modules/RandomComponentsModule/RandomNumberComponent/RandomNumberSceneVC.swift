@@ -19,6 +19,11 @@ class RandomNumberSceneVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    private static func configureTabBarIcon() -> UITabBarItem {
+        let image = UIImage(systemName: "number.square")
+        return UITabBarItem(title: "Random Number", image: image, selectedImage: image)
+    }
 }
 
 // MARK: Scene Factory
@@ -28,6 +33,7 @@ extension RandomNumberSceneVC {
         let viewController = Self.instantiateFromStoryboard()
         let viewModel = RandomNumberSceneViewModel()
         viewController.viewModel = viewModel
+        viewController.tabBarItem = configureTabBarIcon()
         return viewController
     }
 }

@@ -8,19 +8,19 @@
     </dependencies>
     <scenes>
         <!--Tab BarVC-->
-        <scene sceneID="RDT-fg-9LE">
+        <scene sceneID="bED-lU-4y6">
             <objects>
-                <viewController storyboardIdentifier="TabBarVC" id="uUT-n8-eS5" customClass="TabBarVC" customModule="RandomatorDemoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T90-mD-uRz">
+                <viewController storyboardIdentifier="TabBarVC" id="mIn-Zo-jUf" customClass="TabBarVC" customModule="RandomatorDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dke-TH-vgH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="oMb-N2-v5N"/>
+                        <viewLayoutGuide key="safeArea" id="MlN-4H-yeu"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IBi-rv-xDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDx-I3-iYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7" y="115"/>
+            <point key="canvasLocation" x="742" y="15"/>
         </scene>
     </scenes>
 </document>

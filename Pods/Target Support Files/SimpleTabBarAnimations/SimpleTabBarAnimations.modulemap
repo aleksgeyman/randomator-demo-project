@@ -1,0 +1,6 @@
+framework module SimpleTabBarAnimations {
+  umbrella header "SimpleTabBarAnimations-umbrella.h"
+
+  export *
+  module * { export * }
+}

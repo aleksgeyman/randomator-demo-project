@@ -35,9 +35,13 @@
 		C7E7A6A02472CC2D0027322C /* RandomComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7A69E2472CC2D0027322C /* RandomComponentTableViewCell.swift */; };
 		C7E7A6A12472CC2D0027322C /* RandomComponentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E7A69F2472CC2D0027322C /* RandomComponentTableViewCell.xib */; };
 		C7E7A6A52473B6990027322C /* RandomComponentsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7A6A42473B6990027322C /* RandomComponentsEnum.swift */; };
+		FC883E873CD98BBEE5E3DEC4 /* Pods_RandomatorDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A488F3FE770F9CF3AE8C7F /* Pods_RandomatorDemoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F32D69737663E83B3CF00C3 /* Pods-RandomatorDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomatorDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A7A488F3FE770F9CF3AE8C7F /* Pods_RandomatorDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomatorDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B667EB745053B798C5E8CF70 /* Pods-RandomatorDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomatorDemoApp.release.xcconfig"; path = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		C7039EE12473BC4600A8845B /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
 		C7039EE62473CF6300A8845B /* ResultsSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsSceneVC.swift; sourceTree = "<group>"; };
 		C7039EE82473CF7B00A8845B /* ResultsSceneVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsSceneVM.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC883E873CD98BBEE5E3DEC4 /* Pods_RandomatorDemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +142,8 @@
 			children = (
 				C733EB0524725D7800274445 /* RandomatorDemoApp */,
 				C733EB0424725D7800274445 /* Products */,
+				F302655C21D745CA53F926DD /* Pods */,
+				D5A5215CE9C671F494D86BBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +228,24 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		D5A5215CE9C671F494D86BBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7A488F3FE770F9CF3AE8C7F /* Pods_RandomatorDemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F302655C21D745CA53F926DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F32D69737663E83B3CF00C3 /* Pods-RandomatorDemoApp.debug.xcconfig */,
+				B667EB745053B798C5E8CF70 /* Pods-RandomatorDemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C733EB1724725D7900274445 /* Build configuration list for PBXNativeTarget "RandomatorDemoApp" */;
 			buildPhases = (
+				4B86D36D117B24808CB819EA /* [CP] Check Pods Manifest.lock */,
 				C733EAFF24725D7800274445 /* Sources */,
 				C733EB0024725D7800274445 /* Frameworks */,
 				C733EB0124725D7800274445 /* Resources */,
+				404C656D77B5CC65C5F50C5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,6 +318,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		404C656D77B5CC65C5F50C5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B86D36D117B24808CB819EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomatorDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C733EAFF24725D7800274445 /* Sources */ = {
@@ -450,6 +519,7 @@
 		};
 		C733EB1824725D7900274445 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F32D69737663E83B3CF00C3 /* Pods-RandomatorDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +538,7 @@
 		};
 		C733EB1924725D7900274445 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B667EB745053B798C5E8CF70 /* Pods-RandomatorDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
