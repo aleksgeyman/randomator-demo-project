@@ -14,6 +14,13 @@ enum RandomComponents: String, CaseIterable {
     case quote = "Random Quote"
     
     var controller: UIViewController {
-        return UIViewController()
+        let vc: UIViewController
+        switch self {
+        case .number:
+            vc = RandomNumberSceneVC.create()
+        default:
+            vc = UIViewController()
+        }
+        return vc
     }
 }

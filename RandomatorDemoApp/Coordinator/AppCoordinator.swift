@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol AppSceneDelegate: Coordinator {
+    
+    func shouldShowRandomComponentScene(_ randomComponent: RandomComponents)
+}
+
 class AppCoordinator: Coordinator {
     private let window: UIWindow?
     
@@ -25,5 +30,16 @@ class AppCoordinator: Coordinator {
     
     override func start() {
         childCoordinators.first?.start()
+    }
+}
+
+extension AppCoordinator: AppSceneDelegate {
+    func shouldShowRandomComponentScene(_ randomComponent: RandomComponents) {
+        let rootVC = TabBarVC.instantiateFromStoryboard()
+        self.window?.rootViewController = rootVC
+        self.window?.makeKeyAndVisible()
+        let tabCoordinator = TabBarCoordinator(rootViewController: rootVC, randomComponent: randomComponent)
+        addChildCoordinator(tabCoordinator)
+        tabCoordinator.start()
     }
 }

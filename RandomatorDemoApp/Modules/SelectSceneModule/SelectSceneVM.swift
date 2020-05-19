@@ -9,7 +9,7 @@
 import Foundation
 
 protocol SelectSceneDelegate: Coordinator {
-    func selectionSceneShouldContinueTo(_ randomComponentIndex: Int)
+    func selectionSceneShouldContinueTo(_ randomComponent: RandomComponents)
 }
 
 class SelectSceneViewModel: SelectSceneViewModelProtocol {
@@ -43,7 +43,7 @@ class SelectSceneViewModel: SelectSceneViewModelProtocol {
         let dataModel = RandomComponentModel(title: components[index].rawValue)
         let actionOnTap = { [weak self] in
             guard let strongSelf = self else { return }
-            strongSelf.delegate.selectionSceneShouldContinueTo(index)
+            strongSelf.delegate.selectionSceneShouldContinueTo(strongSelf.components[index])
         }
         
         return RandomComponentCellConfigurator(data: dataModel, actionOnTap: actionOnTap)
