@@ -15,6 +15,7 @@ class ViewResultTableViewCell: UITableViewCell, Configurable {
     }
 }
 
-struct ResultDataModel {
-    
+struct ResultDataModel: ResultEntityModel {
+    var value: Int
+    var date: String
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,8 @@
 		C70A4DD32472666700E70996 /* SelectSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70A4DD22472666700E70996 /* SelectSceneVC.swift */; };
 		C70A4DD52472667800E70996 /* SelectSceneVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70A4DD42472667800E70996 /* SelectSceneVM.swift */; };
 		C70A4DD72472668B00E70996 /* SelectSceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70A4DD62472668B00E70996 /* SelectSceneCoordinator.swift */; };
+		C7143AC024751A6300DC8DEA /* RecentResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7143ABF24751A6300DC8DEA /* RecentResultsRepository.swift */; };
+		C7143AC224751D0500DC8DEA /* UserDefaultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7143AC124751D0500DC8DEA /* UserDefaultsRepository.swift */; };
 		C733EB0724725D7800274445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C733EB0624725D7800274445 /* AppDelegate.swift */; };
 		C733EB1024725D7900274445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C733EB0F24725D7900274445 /* Assets.xcassets */; };
 		C733EB1324725D7900274445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C733EB1124725D7900274445 /* LaunchScreen.storyboard */; };
@@ -58,6 +60,8 @@
 		C70A4DD22472666700E70996 /* SelectSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSceneVC.swift; sourceTree = "<group>"; };
 		C70A4DD42472667800E70996 /* SelectSceneVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSceneVM.swift; sourceTree = "<group>"; };
 		C70A4DD62472668B00E70996 /* SelectSceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSceneCoordinator.swift; sourceTree = "<group>"; };
+		C7143ABF24751A6300DC8DEA /* RecentResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentResultsRepository.swift; sourceTree = "<group>"; };
+		C7143AC124751D0500DC8DEA /* UserDefaultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepository.swift; sourceTree = "<group>"; };
 		C733EB0324725D7800274445 /* RandomatorDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomatorDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C733EB0624725D7800274445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C733EB0F24725D7900274445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +141,15 @@
 			path = SelectSceneModule;
 			sourceTree = "<group>";
 		};
+		C7143ABE24751A4500DC8DEA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C7143ABF24751A6300DC8DEA /* RecentResultsRepository.swift */,
+				C7143AC124751D0500DC8DEA /* UserDefaultsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		C733EAFA24725D7800274445 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +171,7 @@
 		C733EB0524725D7800274445 /* RandomatorDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				C7143ABE24751A4500DC8DEA /* Repositories */,
 				C7E7A6A32473B6270027322C /* Modules */,
 				C7039EFA247429D200A8845B /* MainNavigation */,
 				C7E7A6982472C7AC0027322C /* Configurator */,
@@ -242,7 +256,6 @@
 				7F32D69737663E83B3CF00C3 /* Pods-RandomatorDemoApp.debug.xcconfig */,
 				B667EB745053B798C5E8CF70 /* Pods-RandomatorDemoApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -366,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7143AC024751A6300DC8DEA /* RecentResultsRepository.swift in Sources */,
 				C7039EE72473CF6300A8845B /* ResultsSceneVC.swift in Sources */,
 				C7E7A69A2472C7BD0027322C /* Configurator.swift in Sources */,
 				C7039EF52474276200A8845B /* RandomNumberSceneVC.swift in Sources */,
@@ -377,6 +391,7 @@
 				C7039EE22473BC4600A8845B /* Coordinatable.swift in Sources */,
 				C7039EFC24742A2700A8845B /* TabBarVC.swift in Sources */,
 				C733EB1E2472610400274445 /* AppCoordinator.swift in Sources */,
+				C7143AC224751D0500DC8DEA /* UserDefaultsRepository.swift in Sources */,
 				C733EB20247261FF00274445 /* StoryboardInstantiatable.swift in Sources */,
 				C7039EF72474283C00A8845B /* RandomNumberSceneVM.swift in Sources */,
 				C70A4DD52472667800E70996 /* SelectSceneVM.swift in Sources */,

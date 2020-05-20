@@ -28,6 +28,6 @@ class ResultsSceneViewModel: ResultsSceneViewModelProtocol {
     }
     
     func viewConfigurator(at index: Int, in section: Int) -> Configurator {
-        return ViewConfigurator<ViewResultTableViewCell>(data: ResultDataModel())
+        return ViewConfigurator<ViewResultTableViewCell>(data: ResultDataModel(value: 1, date: "1"))
     }
 }
