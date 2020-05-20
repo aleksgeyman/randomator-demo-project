@@ -40,7 +40,7 @@ class ResultsSceneViewModel: ResultsSceneViewModelProtocol {
         if let result = results.value?[index] as? ResultDataModel {
             resultData = result
         } else {
-            resultData = ResultDataModel(value: 1, date: "Today")
+            resultData = ResultDataModel(value: "one", date: "Today")
         }
         
         return ViewConfigurator<ViewResultTableViewCell>(data: resultData)

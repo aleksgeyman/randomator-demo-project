@@ -18,6 +18,6 @@ class ViewResultTableViewCell: UITableViewCell, Configurable {
 }
 
 struct ResultDataModel: ResultEntityModel {
-    var value: Int
+    var value: String
     var date: String
 }

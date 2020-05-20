@@ -9,33 +9,25 @@
 import UIKit
 import SimpleTwoWayBinding
 
-protocol RandomNumberSceneViewModelProtocol {
-    var randomNumber: Observable<Int> { get }
+class RandomNumberSceneVC: BaseRandomComponentVC {
     
-    func generateRandomNumber()
-}
-
-class RandomNumberSceneVC: UIViewController {
-    
-    private var viewModel: RandomNumberSceneViewModelProtocol!
     @IBOutlet private weak var numberLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupBindings()
     }
     
     @IBAction private func didTapOnButton(_ sender: Any) {
-        viewModel.generateRandomNumber()
+        viewModel.generateRandomValue()
     }
     
-    private func setupBindings() {
-        viewModel.randomNumber.bind { [weak self] _, value  in
+    override func setupBindings() {
+        viewModel.randomValue.bind { [weak self] _, value  in
             self?.numberLabel.text = "\(value)"
         }
     }
     
-    private static func configureTabBarIcon() -> UITabBarItem {
+    override class func configureTabBarIcon() -> UITabBarItem {
         let image = UIImage(systemName: "number.square")
         return UITabBarItem(title: "Random Number", image: image, selectedImage: image)
     }
@@ -46,8 +38,7 @@ extension RandomNumberSceneVC {
     
     static func create() -> UIViewController {
         let viewController = Self.instantiateFromStoryboard()
-        let viewModel = RandomNumberSceneViewModel(recentResultsRepository: RecentResultsRepository())
-        viewController.viewModel = viewModel
+        viewController.viewModel = RandomNumberSceneViewModel(randomComponent: RandomComponents.number, recentResultsRepository: RecentResultsRepository())
         viewController.tabBarItem = configureTabBarIcon()
         return viewController
     }

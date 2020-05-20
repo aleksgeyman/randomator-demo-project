@@ -42,6 +42,6 @@ class RecentResultsRepository: RecentResultsRepositoryProtocol {
 }
 
 protocol ResultEntityModel: Codable {
-    var value: Int { get }
+    var value: String { get }
     var date: String { get }
 }

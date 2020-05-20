@@ -9,27 +9,13 @@
 import Foundation
 import SimpleTwoWayBinding
 
-private struct RandomNumberValues {
-    static let minValue = 0
-    static let maxValue = 100
-}
-
-class RandomNumberSceneViewModel: RandomNumberSceneViewModelProtocol {
-    var randomNumber = Observable<Int>()
-    private var recentResultsRepository: RecentResultsRepositoryProtocol
+class RandomNumberSceneViewModel: BaseRandomComponentViewModelProtocol {
+    var randomComponent: RandomComponents
+    var randomValue = Observable<String>()
+    var recentResultsRepository: RecentResultsRepositoryProtocol
     
-    init(recentResultsRepository: RecentResultsRepositoryProtocol) {
+    init(randomComponent: RandomComponents, recentResultsRepository: RecentResultsRepositoryProtocol) {
+        self.randomComponent = randomComponent
         self.recentResultsRepository = recentResultsRepository
-    }
-    
-    func generateRandomNumber() {
-        let number = Int.random(in: RandomNumberValues.minValue...RandomNumberValues.maxValue)
-        randomNumber.value = number
-        saveResult(result: number)
-    }
-    
-    private func saveResult(result: Int) {
-        let result = ResultDataModel(value: result, date: "Today")
-        recentResultsRepository.addRecentResult(for: RandomComponents.number, result: result)
     }
 }
