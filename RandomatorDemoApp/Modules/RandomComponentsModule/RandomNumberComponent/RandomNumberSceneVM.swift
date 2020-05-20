@@ -16,8 +16,20 @@ private struct RandomNumberValues {
 
 class RandomNumberSceneViewModel: RandomNumberSceneViewModelProtocol {
     var randomNumber = Observable<Int>()
+    private var recentResultsRepository: RecentResultsRepositoryProtocol
+    
+    init(recentResultsRepository: RecentResultsRepositoryProtocol) {
+        self.recentResultsRepository = recentResultsRepository
+    }
     
     func generateRandomNumber() {
-        randomNumber.value = Int.random(in: RandomNumberValues.minValue...RandomNumberValues.maxValue)
+        let number = Int.random(in: RandomNumberValues.minValue...RandomNumberValues.maxValue)
+        randomNumber.value = number
+        saveResult(result: number)
+    }
+    
+    private func saveResult(result: Int) {
+        let result = ResultDataModel(value: result, date: "Today")
+        recentResultsRepository.addRecentResult(for: RandomComponents.number, result: result)
     }
 }

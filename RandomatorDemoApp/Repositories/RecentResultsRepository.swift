@@ -9,7 +9,7 @@
 import Foundation
 
 private struct RecentResultsConstants {
-    static let maxCount = 50
+    static let maxCount = 10
 }
 
 protocol RecentResultsRepositoryProtocol {
@@ -26,17 +26,16 @@ class RecentResultsRepository: RecentResultsRepositoryProtocol {
     }
     
     func getAllRecentResults(for randomComponent: RandomComponents) -> [ResultDataModel] {
-        var array = [ResultDataModel]()
-        array.reserveCapacity(RecentResultsConstants.maxCount)
-        let results = userDefaultsRepository.getObjectsArray(of: ResultDataModel.self, for: randomComponent.rawValue)
-        array.append(contentsOf: results)
-        return array
+        return userDefaultsRepository.getObjectsArray(of: ResultDataModel.self, for: randomComponent.rawValue)
     }
     
     func addRecentResult(for randomComponent: RandomComponents, result: ResultEntityModel) {
         guard let result = result as? ResultDataModel else { return }
         
         var results = getAllRecentResults(for: randomComponent)
+        if results.count >= RecentResultsConstants.maxCount {
+            _ = results.popLast()
+        }
         results.insert(result, at: 0)
         userDefaultsRepository.setObjectsArray(results, for: randomComponent.rawValue)
     }

@@ -46,7 +46,7 @@ extension RandomNumberSceneVC {
     
     static func create() -> UIViewController {
         let viewController = Self.instantiateFromStoryboard()
-        let viewModel = RandomNumberSceneViewModel()
+        let viewModel = RandomNumberSceneViewModel(recentResultsRepository: RecentResultsRepository())
         viewController.viewModel = viewModel
         viewController.tabBarItem = configureTabBarIcon()
         return viewController

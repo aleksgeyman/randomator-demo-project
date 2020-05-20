@@ -10,8 +10,10 @@ import UIKit
 
 class ViewResultTableViewCell: UITableViewCell, Configurable {
 
+    @IBOutlet private weak var valueLabel: UILabel!
+    
     func configure(with data: ResultDataModel) {
-        
+        valueLabel.text = "\(data.value)"
     }
 }
 
