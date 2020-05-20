@@ -52,5 +52,43 @@
             </objects>
             <point key="canvasLocation" x="264" y="287"/>
         </scene>
+        <!--Dice SceneVC-->
+        <scene sceneID="5VH-x8-1ph">
+            <objects>
+                <viewController storyboardIdentifier="DiceSceneVC" id="CrI-2z-K3W" customClass="DiceSceneVC" customModule="RandomatorDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zc5-3V-2IB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B13-Xh-sjA">
+                                <rect key="frame" x="79" y="325" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="B13-Xh-sjA" secondAttribute="height" multiplier="1:1" id="D7T-sM-CwD"/>
+                                    <constraint firstAttribute="height" constant="256" id="qBO-Da-dkz"/>
+                                </constraints>
+                                <state key="normal" image="dice1"/>
+                                <connections>
+                                    <action selector="didTapOnDiceButton:" destination="CrI-2z-K3W" eventType="touchUpInside" id="Od8-l0-Akr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="B13-Xh-sjA" firstAttribute="centerX" secondItem="3eA-O3-aaJ" secondAttribute="centerX" id="7Ka-95-xbd"/>
+                            <constraint firstItem="B13-Xh-sjA" firstAttribute="centerY" secondItem="3eA-O3-aaJ" secondAttribute="centerY" id="OY3-rO-SB6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3eA-O3-aaJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="diceButton" destination="B13-Xh-sjA" id="v3R-jn-3Vw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5A9-Jf-qwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="284"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="dice1" width="256" height="256"/>
+    </resources>
 </document>

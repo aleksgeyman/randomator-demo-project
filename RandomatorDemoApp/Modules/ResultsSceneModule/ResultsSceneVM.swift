@@ -12,14 +12,16 @@ import SimpleTwoWayBinding
 class ResultsSceneViewModel: ResultsSceneViewModelProtocol {
     
     var results = Observable<[ResultEntityModel]>()
+    private var randomComponent: RandomComponents
     private var recentResultsRepository: RecentResultsRepositoryProtocol
     
-    init(recentResultsRepository: RecentResultsRepositoryProtocol) {
+    init(randomComponent: RandomComponents, recentResultsRepository: RecentResultsRepositoryProtocol) {
+        self.randomComponent = randomComponent
         self.recentResultsRepository = recentResultsRepository
     }
     
     func start() {
-        results.value = recentResultsRepository.getAllRecentResults(for: RandomComponents.number)
+        results.value = recentResultsRepository.getAllRecentResults(for: randomComponent)
     }
     
     // MARK: DataSource

@@ -44,9 +44,9 @@ class ResultsSceneVC: UIViewController {
 // MARK: Scene Factory
 extension ResultsSceneVC {
     
-    static func create() -> UIViewController {
+    static func create(for randomComponent: RandomComponents) -> UIViewController {
         let viewController = Self.instantiateFromStoryboard()
-        let viewModel = ResultsSceneViewModel(recentResultsRepository: RecentResultsRepository())
+        let viewModel = ResultsSceneViewModel(randomComponent: randomComponent, recentResultsRepository: RecentResultsRepository())
         viewController.viewModel = viewModel
         viewController.tabBarItem = configureTabBarIcon()
         return viewController

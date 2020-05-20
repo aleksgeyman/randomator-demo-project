@@ -18,6 +18,7 @@ class TabBarCoordinator: Coordinator {
     }
     
     override func start() {
-        rootViewController.setViewControllers([randomComponent.controller, ResultsSceneVC.create()], animated: true)
+        let resultsVC = ResultsSceneVC.create(for: randomComponent)
+        rootViewController.setViewControllers([randomComponent.controller, resultsVC], animated: true)
     }
 }

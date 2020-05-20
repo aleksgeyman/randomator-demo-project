@@ -1,0 +1,21 @@
+//
+//  DiceSceneVM.swift
+//  RandomatorDemoApp
+//
+//  Created by Aleksandar Geyman on 20.05.20.
+//  Copyright © 2020 Aleksandar Geyman. All rights reserved.
+//
+
+import Foundation
+import SimpleTwoWayBinding
+
+class DiceSceneViewModel: BaseRandomComponentViewModelProtocol {
+    var randomComponent: RandomComponents
+    var randomValue = Observable<String>()
+    var recentResultsRepository: RecentResultsRepositoryProtocol
+    
+    init(randomComponent: RandomComponents, recentResultsRepository: RecentResultsRepositoryProtocol) {
+        self.randomComponent = randomComponent
+        self.recentResultsRepository = recentResultsRepository
+    }
+}

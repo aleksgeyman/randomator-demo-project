@@ -18,6 +18,8 @@ enum RandomComponents: String, CaseIterable {
         switch self {
         case .number:
             vc = RandomNumberSceneVC.create()
+        case .dice:
+            vc = DiceSceneVC.create()
         default:
             vc = UIViewController()
         }

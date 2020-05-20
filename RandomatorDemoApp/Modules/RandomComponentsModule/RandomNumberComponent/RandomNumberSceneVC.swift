@@ -43,10 +43,3 @@ extension RandomNumberSceneVC {
         return viewController
     }
 }
-
-// MARK: StoryboardInstantiatable
-extension RandomNumberSceneVC: StoryboardInstantiatable {
-    static var storyboardName: String {
-        return "RandomComponents"
-    }
-}

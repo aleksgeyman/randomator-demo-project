@@ -34,3 +34,10 @@ class BaseRandomComponentVC: UIViewController {
         preconditionFailure("\(#function) should be overriden in child class!")
     }
 }
+
+// MARK: StoryboardInstantiatable
+extension BaseRandomComponentVC: StoryboardInstantiatable {
+    static var storyboardName: String {
+        return "RandomComponents"
+    }
+}
