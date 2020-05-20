@@ -7,5 +7,6 @@ target 'RandomatorDemoApp' do
   
   # Pods for RandomatorDemoApp
   pod 'SimpleTabBarAnimations'
+  pod 'SimpleTwoWayBinding'
   
 end

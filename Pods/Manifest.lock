@@ -1,16 +1,20 @@
 PODS:
   - SimpleTabBarAnimations (1.1.0)
+  - SimpleTwoWayBinding (0.0.2)
 
 DEPENDENCIES:
   - SimpleTabBarAnimations
+  - SimpleTwoWayBinding
 
 SPEC REPOS:
   trunk:
     - SimpleTabBarAnimations
+    - SimpleTwoWayBinding
 
 SPEC CHECKSUMS:
   SimpleTabBarAnimations: 62982ab51a516edd631e04c3a1c6e83d51e9c49c
+  SimpleTwoWayBinding: 728d751c25d9909ddf2ee76711ab4a8a71e00c69
 
-PODFILE CHECKSUM: 097e256b2ff2725d13581f9318364567a24afc0a
+PODFILE CHECKSUM: 4c2b9b823e587ee696b0c4168b502e5524077d38
 
 COCOAPODS: 1.9.1

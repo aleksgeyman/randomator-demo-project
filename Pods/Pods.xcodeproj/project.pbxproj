@@ -7,55 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16DAC03905E321807B0E8766D041382E /* Pods-RandomatorDemoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3CF81CF95F8CD6E0D6BB0BA6A6AE004 /* Pods-RandomatorDemoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16E3660FE4AAC71FA959CDBED0E3DC25 /* SimpleTabBarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E42FC14812D9E912734E8A03953EB /* SimpleTabBarAnimation.swift */; };
-		216AC790B46FD4DF5124AB56DFF5EC81 /* SimpleTabBarAnimations-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 636FFEBC0A17F61F8618FAEC219DACC9 /* SimpleTabBarAnimations-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2A96254F6EA667AFBC00ABA2C1CA95A /* SimpleTabBarAnimations-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2308F29BCAB73848ADD3E66A18E147F /* SimpleTabBarAnimations-dummy.m */; };
-		C3ED6E44A60111CA0148CD4FD662B8B5 /* Pods-RandomatorDemoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E736E00AD2D84A96B031AC1209C7F /* Pods-RandomatorDemoApp-dummy.m */; };
-		EDBB20AAC3CC0FB8067E5653409AA8AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FAAEB530A9C7DDB4597BE5CB6C369FE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		073D6AC040BB5CC3C417DB2EB1ADCBCA /* Pods-RandomatorDemoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3CF81CF95F8CD6E0D6BB0BA6A6AE004 /* Pods-RandomatorDemoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083D5A61E4861F3B63B30E0433B9AD56 /* Pods-RandomatorDemoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E736E00AD2D84A96B031AC1209C7F /* Pods-RandomatorDemoApp-dummy.m */; };
+		16E3660FE4AAC71FA959CDBED0E3DC25 /* SimpleTabBarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666CC24C448566B7FDCEB7B29964D2FC /* SimpleTabBarAnimation.swift */; };
+		216AC790B46FD4DF5124AB56DFF5EC81 /* SimpleTabBarAnimations-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8C3FBF92FA29519B6AB7DFE1627491 /* SimpleTabBarAnimations-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25BB85A4FF33EECA2E93CCB693CAE4BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		449B5DF9BD1B24F2FF60299C930C4927 /* SimpleTwoWayBinding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D68335789421E03954FB08BD401667F4 /* SimpleTwoWayBinding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52A1421335EA24BDA289E4CB1D5EA6EC /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD329A15C66949C7ED6E623D2E6FA68A /* Bindable.swift */; };
+		6C135B718E4929D190F6B35D7EC8E525 /* NSObject+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E3F8DDFD97D99C1C4AA2234D81215 /* NSObject+Observable.swift */; };
+		80844750856CEC32594B4B4ABB558FA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		80AA1B5B47220B77E75FE452CCB58486 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159285B712E616DB5D171CA26492896 /* Observable.swift */; };
+		8F28F0A51ABB0553C2B70A1A94499140 /* UIControls+Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92CAA97EAD5A65E1EC3240529C1FD80 /* UIControls+Bindable.swift */; };
+		A63CF67FF46CB5A7926694DA9D169FA0 /* BlockBasedSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929ABD5610C740E039CAF2596D47D576 /* BlockBasedSelector.swift */; };
+		C2A96254F6EA667AFBC00ABA2C1CA95A /* SimpleTabBarAnimations-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B4D0ED92306B586B96DB40933379F /* SimpleTabBarAnimations-dummy.m */; };
+		C84E604A695446BB25AE9AB4D5164CF9 /* BlockBasedSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD03A97569C89988342A0E5B14F0DE3 /* BlockBasedSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D245B907EE9F020E46CF76980FF2DAD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		E323F67D7A41B0F274FC18E0756B739B /* SimpleTwoWayBindings-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = A593694365ED24FDF12052F69E02C41B /* SimpleTwoWayBindings-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDBB20AAC3CC0FB8067E5653409AA8AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		F83382F1AD1A45870CA681D1B938E238 /* BlockBasedSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 103051027F9F8FF51A6A6F2F02A8E0E1 /* BlockBasedSelector.m */; };
+		FCCAECE7316316ED6F7B393FB95D081E /* SimpleTwoWayBinding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A386318F95AF135588208349813859 /* SimpleTwoWayBinding-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0E60543CD93199DC2A1727106A240FC1 /* PBXContainerItemProxy */ = {
+		92E9AB2663DD554693F373AA6CFA7B18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5A62452A8BC9517C3EF768C66A8FC551;
 			remoteInfo = SimpleTabBarAnimations;
 		};
+		A093A0E26F601F51F512C32F886C80DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25CABCA205AEAF695A91DBFFE2B5A0A0;
+			remoteInfo = SimpleTwoWayBinding;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E0E42FC14812D9E912734E8A03953EB /* SimpleTabBarAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleTabBarAnimation.swift; path = SimpleTabBarAnimations/Classes/SimpleTabBarAnimation.swift; sourceTree = "<group>"; };
+		0FD03A97569C89988342A0E5B14F0DE3 /* BlockBasedSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BlockBasedSelector.h; path = Sources/BlockBasedSelector/BlockBasedSelector.h; sourceTree = "<group>"; };
+		103051027F9F8FF51A6A6F2F02A8E0E1 /* BlockBasedSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BlockBasedSelector.m; path = Sources/BlockBasedSelector/BlockBasedSelector.m; sourceTree = "<group>"; };
 		1504AA243D1D11D23BC2E7617362D781 /* Pods-RandomatorDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RandomatorDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		1B1E736E00AD2D84A96B031AC1209C7F /* Pods-RandomatorDemoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RandomatorDemoApp-dummy.m"; sourceTree = "<group>"; };
 		228F7AC531CF117BE2C42F4E055F591E /* Pods-RandomatorDemoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RandomatorDemoApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		2C1465FD7DE28DD373C518722EFA2BB0 /* SimpleTabBarAnimations.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleTabBarAnimations.modulemap; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3882017ADAE639CB4BB8EEB9991FEE3E /* SimpleTwoWayBinding-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleTwoWayBinding-Info.plist"; sourceTree = "<group>"; };
+		3FDFE3294EA3DBB4E33F6317E0B75292 /* SimpleTwoWayBinding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleTwoWayBinding-prefix.pch"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		445751211733B694AA79DDD1809A17DD /* Pods-RandomatorDemoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RandomatorDemoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		551885B87A056CE499C73F5F8ADCB39C /* SimpleTabBarAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleTabBarAnimations.debug.xcconfig; sourceTree = "<group>"; };
+		44668A461F4C98BC2E99648753243B6A /* SimpleTwoWayBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleTwoWayBinding.framework; path = SimpleTwoWayBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD44EB6FC196B132BDA0F4F35F8C84D /* SimpleTwoWayBinding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleTwoWayBinding.modulemap; sourceTree = "<group>"; };
 		59FD4A4CBDF73552C9526FE5E687D297 /* Pods_RandomatorDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RandomatorDemoApp.framework; path = "Pods-RandomatorDemoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		636FFEBC0A17F61F8618FAEC219DACC9 /* SimpleTabBarAnimations-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleTabBarAnimations-umbrella.h"; sourceTree = "<group>"; };
+		666CC24C448566B7FDCEB7B29964D2FC /* SimpleTabBarAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleTabBarAnimation.swift; path = SimpleTabBarAnimations/Classes/SimpleTabBarAnimation.swift; sourceTree = "<group>"; };
+		6B8C3FBF92FA29519B6AB7DFE1627491 /* SimpleTabBarAnimations-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleTabBarAnimations-umbrella.h"; sourceTree = "<group>"; };
 		7725E09D29CC7F460ABC3F4C573DA379 /* SimpleTabBarAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleTabBarAnimations.framework; path = SimpleTabBarAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84B609F4165375CD3CCF15257C8A7E02 /* SimpleTabBarAnimations-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleTabBarAnimations-Info.plist"; sourceTree = "<group>"; };
-		87029E3B61DDB3719D77471E073F31D6 /* SimpleTabBarAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleTabBarAnimations.release.xcconfig; sourceTree = "<group>"; };
+		81305392261C33BABD8750AFB058464F /* SimpleTwoWayBinding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleTwoWayBinding.release.xcconfig; sourceTree = "<group>"; };
+		9159285B712E616DB5D171CA26492896 /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = Sources/Observable.swift; sourceTree = "<group>"; };
+		929ABD5610C740E039CAF2596D47D576 /* BlockBasedSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockBasedSelector.swift; path = Sources/BlockBasedSelector/BlockBasedSelector.swift; sourceTree = "<group>"; };
+		9BF2BE365C564D15DD3F3FA400E5FBF3 /* SimpleTabBarAnimations.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleTabBarAnimations.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B8DCE5DECF7CC141D06700FD3666BEC4 /* SimpleTabBarAnimations-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleTabBarAnimations-prefix.pch"; sourceTree = "<group>"; };
+		A3A23FADCC658E65F603CAA31C987906 /* SimpleTabBarAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleTabBarAnimations.debug.xcconfig; sourceTree = "<group>"; };
+		A593694365ED24FDF12052F69E02C41B /* SimpleTwoWayBindings-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SimpleTwoWayBindings-Bridging-Header.h"; path = "Sources/SimpleTwoWayBindings-Bridging-Header.h"; sourceTree = "<group>"; };
+		A6A386318F95AF135588208349813859 /* SimpleTwoWayBinding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleTwoWayBinding-dummy.m"; sourceTree = "<group>"; };
+		A92CAA97EAD5A65E1EC3240529C1FD80 /* UIControls+Bindable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControls+Bindable.swift"; path = "Sources/UIControls+Bindable.swift"; sourceTree = "<group>"; };
+		C38E3F8DDFD97D99C1C4AA2234D81215 /* NSObject+Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Observable.swift"; path = "Sources/NSObject+Observable.swift"; sourceTree = "<group>"; };
+		C78C127B55C1CDA34706CBB729C5FD7E /* SimpleTwoWayBinding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleTwoWayBinding.debug.xcconfig; sourceTree = "<group>"; };
 		C9172C5F9886B1D87DA9142189905498 /* Pods-RandomatorDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RandomatorDemoApp.release.xcconfig"; sourceTree = "<group>"; };
-		D2308F29BCAB73848ADD3E66A18E147F /* SimpleTabBarAnimations-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleTabBarAnimations-dummy.m"; sourceTree = "<group>"; };
+		CE38E2CB482F994B6F8B1A86E5232502 /* SimpleTabBarAnimations-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleTabBarAnimations-Info.plist"; sourceTree = "<group>"; };
+		D26B4D0ED92306B586B96DB40933379F /* SimpleTabBarAnimations-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleTabBarAnimations-dummy.m"; sourceTree = "<group>"; };
 		D2BD66663C8ECEC182987169F4D580FF /* Pods-RandomatorDemoApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RandomatorDemoApp-frameworks.sh"; sourceTree = "<group>"; };
 		D3CF81CF95F8CD6E0D6BB0BA6A6AE004 /* Pods-RandomatorDemoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RandomatorDemoApp-umbrella.h"; sourceTree = "<group>"; };
+		D50BB61E0116F07DB2EE44A7758752BF /* SimpleTabBarAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleTabBarAnimations.release.xcconfig; sourceTree = "<group>"; };
+		D68335789421E03954FB08BD401667F4 /* SimpleTwoWayBinding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleTwoWayBinding-umbrella.h"; sourceTree = "<group>"; };
 		DAFE49F2A572DDD8A510E5D397F6526D /* Pods-RandomatorDemoApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RandomatorDemoApp.modulemap"; sourceTree = "<group>"; };
+		DD329A15C66949C7ED6E623D2E6FA68A /* Bindable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bindable.swift; path = Sources/Bindable.swift; sourceTree = "<group>"; };
+		EC71D2E93D9B8FE45FF1A87584C759D0 /* SimpleTabBarAnimations-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleTabBarAnimations-prefix.pch"; sourceTree = "<group>"; };
 		EDCB79B8BAD334665558E1215D3FC186 /* Pods-RandomatorDemoApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RandomatorDemoApp-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0207C372A7629EFFAAE6366722CB4BF2 /* Frameworks */ = {
+		247F805530D7532C0D841FD1AA8B4686 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAAEB530A9C7DDB4597BE5CB6C369FE6 /* Foundation.framework in Frameworks */,
+				25BB85A4FF33EECA2E93CCB693CAE4BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B88C8389CA122958E266CC715CB74F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D245B907EE9F020E46CF76980FF2DAD3 /* Foundation.framework in Frameworks */,
+				80844750856CEC32594B4B4ABB558FA0 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		195B8F0EB315B1BEE1EE5B7E209D4DB4 /* Pods-RandomatorDemoApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,38 +140,38 @@
 			path = "Target Support Files/Pods-RandomatorDemoApp";
 			sourceTree = "<group>";
 		};
-		1CDD2C0FF4DA41BCA939E50572834F7F /* SimpleTabBarAnimations */ = {
+		2F1167A9933A04B41207C045ABEE8D70 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0E0E42FC14812D9E912734E8A03953EB /* SimpleTabBarAnimation.swift */,
-				37809E3EB7C84AD3AA652FE77D55F63B /* Support Files */,
-			);
-			name = SimpleTabBarAnimations;
-			path = SimpleTabBarAnimations;
-			sourceTree = "<group>";
-		};
-		37809E3EB7C84AD3AA652FE77D55F63B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2C1465FD7DE28DD373C518722EFA2BB0 /* SimpleTabBarAnimations.modulemap */,
-				D2308F29BCAB73848ADD3E66A18E147F /* SimpleTabBarAnimations-dummy.m */,
-				84B609F4165375CD3CCF15257C8A7E02 /* SimpleTabBarAnimations-Info.plist */,
-				B8DCE5DECF7CC141D06700FD3666BEC4 /* SimpleTabBarAnimations-prefix.pch */,
-				636FFEBC0A17F61F8618FAEC219DACC9 /* SimpleTabBarAnimations-umbrella.h */,
-				551885B87A056CE499C73F5F8ADCB39C /* SimpleTabBarAnimations.debug.xcconfig */,
-				87029E3B61DDB3719D77471E073F31D6 /* SimpleTabBarAnimations.release.xcconfig */,
+				4BD44EB6FC196B132BDA0F4F35F8C84D /* SimpleTwoWayBinding.modulemap */,
+				A6A386318F95AF135588208349813859 /* SimpleTwoWayBinding-dummy.m */,
+				3882017ADAE639CB4BB8EEB9991FEE3E /* SimpleTwoWayBinding-Info.plist */,
+				3FDFE3294EA3DBB4E33F6317E0B75292 /* SimpleTwoWayBinding-prefix.pch */,
+				D68335789421E03954FB08BD401667F4 /* SimpleTwoWayBinding-umbrella.h */,
+				C78C127B55C1CDA34706CBB729C5FD7E /* SimpleTwoWayBinding.debug.xcconfig */,
+				81305392261C33BABD8750AFB058464F /* SimpleTwoWayBinding.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SimpleTabBarAnimations";
+			path = "../Target Support Files/SimpleTwoWayBinding";
 			sourceTree = "<group>";
 		};
-		68CC4AFDE7B7E98DB93E4BF255E378FB /* Products */ = {
+		589D647E26469E49D08FC7F2106BD3A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				59FD4A4CBDF73552C9526FE5E687D297 /* Pods_RandomatorDemoApp.framework */,
 				7725E09D29CC7F460ABC3F4C573DA379 /* SimpleTabBarAnimations.framework */,
+				44668A461F4C98BC2E99648753243B6A /* SimpleTwoWayBinding.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7065A56DE515C159C41657C6C28C2368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE22C09B862DCCCEE99425555EDB914C /* SimpleTabBarAnimations */,
+				FAE0FC0C0B9AA3FAF432E3D410CCA23F /* SimpleTwoWayBinding */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A7A26B8E416008342ADD99185906BBB7 /* Targets Support Files */ = {
@@ -129,44 +182,89 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BBB67984BA6CCDA4FE7E79CC23FA5237 /* Pods */ = {
+		BE22C09B862DCCCEE99425555EDB914C /* SimpleTabBarAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				1CDD2C0FF4DA41BCA939E50572834F7F /* SimpleTabBarAnimations */,
+				666CC24C448566B7FDCEB7B29964D2FC /* SimpleTabBarAnimation.swift */,
+				D10BEB6AD2DFF17BF07B737DD6022B3E /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = SimpleTabBarAnimations;
+			path = SimpleTabBarAnimations;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				BBB67984BA6CCDA4FE7E79CC23FA5237 /* Pods */,
-				68CC4AFDE7B7E98DB93E4BF255E378FB /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				7065A56DE515C159C41657C6C28C2368 /* Pods */,
+				589D647E26469E49D08FC7F2106BD3A1 /* Products */,
 				A7A26B8E416008342ADD99185906BBB7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D10BEB6AD2DFF17BF07B737DD6022B3E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				9BF2BE365C564D15DD3F3FA400E5FBF3 /* SimpleTabBarAnimations.modulemap */,
+				D26B4D0ED92306B586B96DB40933379F /* SimpleTabBarAnimations-dummy.m */,
+				CE38E2CB482F994B6F8B1A86E5232502 /* SimpleTabBarAnimations-Info.plist */,
+				EC71D2E93D9B8FE45FF1A87584C759D0 /* SimpleTabBarAnimations-prefix.pch */,
+				6B8C3FBF92FA29519B6AB7DFE1627491 /* SimpleTabBarAnimations-umbrella.h */,
+				A3A23FADCC658E65F603CAA31C987906 /* SimpleTabBarAnimations.debug.xcconfig */,
+				D50BB61E0116F07DB2EE44A7758752BF /* SimpleTabBarAnimations.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/SimpleTabBarAnimations";
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FAE0FC0C0B9AA3FAF432E3D410CCA23F /* SimpleTwoWayBinding */ = {
+			isa = PBXGroup;
+			children = (
+				DD329A15C66949C7ED6E623D2E6FA68A /* Bindable.swift */,
+				0FD03A97569C89988342A0E5B14F0DE3 /* BlockBasedSelector.h */,
+				103051027F9F8FF51A6A6F2F02A8E0E1 /* BlockBasedSelector.m */,
+				929ABD5610C740E039CAF2596D47D576 /* BlockBasedSelector.swift */,
+				C38E3F8DDFD97D99C1C4AA2234D81215 /* NSObject+Observable.swift */,
+				9159285B712E616DB5D171CA26492896 /* Observable.swift */,
+				A593694365ED24FDF12052F69E02C41B /* SimpleTwoWayBindings-Bridging-Header.h */,
+				A92CAA97EAD5A65E1EC3240529C1FD80 /* UIControls+Bindable.swift */,
+				2F1167A9933A04B41207C045ABEE8D70 /* Support Files */,
+			);
+			name = SimpleTwoWayBinding;
+			path = SimpleTwoWayBinding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		18B3686070D53EE1C9A4DE19ADCF649F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073D6AC040BB5CC3C417DB2EB1ADCBCA /* Pods-RandomatorDemoApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76E63307AFE24B13AA568CD7257642D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84E604A695446BB25AE9AB4D5164CF9 /* BlockBasedSelector.h in Headers */,
+				449B5DF9BD1B24F2FF60299C930C4927 /* SimpleTwoWayBinding-umbrella.h in Headers */,
+				E323F67D7A41B0F274FC18E0756B739B /* SimpleTwoWayBindings-Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5FF83F10BB841AA0E08B043CD5DCB43 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,17 +273,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F53E60963CCE8BECC093DAC0FE0F117D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				16DAC03905E321807B0E8766D041382E /* Pods-RandomatorDemoApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		25CABCA205AEAF695A91DBFFE2B5A0A0 /* SimpleTwoWayBinding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA96EA2F9DBCF095B5B8CFA0F31CFA9 /* Build configuration list for PBXNativeTarget "SimpleTwoWayBinding" */;
+			buildPhases = (
+				A76E63307AFE24B13AA568CD7257642D /* Headers */,
+				A0142640E62FB11E8CD4081FC9738C67 /* Sources */,
+				2B88C8389CA122958E266CC715CB74F9 /* Frameworks */,
+				DEAD6230647884570FDB2742BF90DA60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTwoWayBinding;
+			productName = SimpleTwoWayBinding;
+			productReference = 44668A461F4C98BC2E99648753243B6A /* SimpleTwoWayBinding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5A62452A8BC9517C3EF768C66A8FC551 /* SimpleTabBarAnimations */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C632443994EFB6B76D5178028063FD /* Build configuration list for PBXNativeTarget "SimpleTabBarAnimations" */;
@@ -206,17 +314,18 @@
 		};
 		6E946E997470ABAB83FB16585F16F444 /* Pods-RandomatorDemoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F0D7C447761E0ABBFEBA81CA9AAB1E4 /* Build configuration list for PBXNativeTarget "Pods-RandomatorDemoApp" */;
+			buildConfigurationList = BAE3D5F61FFC4A22896D10751F52679C /* Build configuration list for PBXNativeTarget "Pods-RandomatorDemoApp" */;
 			buildPhases = (
-				F53E60963CCE8BECC093DAC0FE0F117D /* Headers */,
-				76E7B31E18609C45C957B5FBF508B9E8 /* Sources */,
-				0207C372A7629EFFAAE6366722CB4BF2 /* Frameworks */,
-				1626626CE1A342A3C2F4511D105F6803 /* Resources */,
+				18B3686070D53EE1C9A4DE19ADCF649F /* Headers */,
+				09EBB9CD058B30D5CE47ACD5A6ACFF6F /* Sources */,
+				247F805530D7532C0D841FD1AA8B4686 /* Frameworks */,
+				1571C606F440C4DF89469FFF28978D4F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA4822EA31876088CAC0A9EAD29A24AC /* PBXTargetDependency */,
+				654F8EF28D7780481BA499CE3B71EA9B /* PBXTargetDependency */,
+				B51351339F3821BB293EC10FE4E5564C /* PBXTargetDependency */,
 			);
 			name = "Pods-RandomatorDemoApp";
 			productName = "Pods-RandomatorDemoApp";
@@ -241,18 +350,19 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 68CC4AFDE7B7E98DB93E4BF255E378FB /* Products */;
+			productRefGroup = 589D647E26469E49D08FC7F2106BD3A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6E946E997470ABAB83FB16585F16F444 /* Pods-RandomatorDemoApp */,
 				5A62452A8BC9517C3EF768C66A8FC551 /* SimpleTabBarAnimations */,
+				25CABCA205AEAF695A91DBFFE2B5A0A0 /* SimpleTwoWayBinding */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1626626CE1A342A3C2F4511D105F6803 /* Resources */ = {
+		1571C606F440C4DF89469FFF28978D4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,14 +376,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEAD6230647884570FDB2742BF90DA60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		76E7B31E18609C45C957B5FBF508B9E8 /* Sources */ = {
+		09EBB9CD058B30D5CE47ACD5A6ACFF6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3ED6E44A60111CA0148CD4FD662B8B5 /* Pods-RandomatorDemoApp-dummy.m in Sources */,
+				083D5A61E4861F3B63B30E0433B9AD56 /* Pods-RandomatorDemoApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0142640E62FB11E8CD4081FC9738C67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A1421335EA24BDA289E4CB1D5EA6EC /* Bindable.swift in Sources */,
+				F83382F1AD1A45870CA681D1B938E238 /* BlockBasedSelector.m in Sources */,
+				A63CF67FF46CB5A7926694DA9D169FA0 /* BlockBasedSelector.swift in Sources */,
+				6C135B718E4929D190F6B35D7EC8E525 /* NSObject+Observable.swift in Sources */,
+				80AA1B5B47220B77E75FE452CCB58486 /* Observable.swift in Sources */,
+				FCCAECE7316316ED6F7B393FB95D081E /* SimpleTwoWayBinding-dummy.m in Sources */,
+				8F28F0A51ABB0553C2B70A1A94499140 /* UIControls+Bindable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,18 +420,63 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BA4822EA31876088CAC0A9EAD29A24AC /* PBXTargetDependency */ = {
+		654F8EF28D7780481BA499CE3B71EA9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimpleTabBarAnimations;
 			target = 5A62452A8BC9517C3EF768C66A8FC551 /* SimpleTabBarAnimations */;
-			targetProxy = 0E60543CD93199DC2A1727106A240FC1 /* PBXContainerItemProxy */;
+			targetProxy = 92E9AB2663DD554693F373AA6CFA7B18 /* PBXContainerItemProxy */;
+		};
+		B51351339F3821BB293EC10FE4E5564C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleTwoWayBinding;
+			target = 25CABCA205AEAF695A91DBFFE2B5A0A0 /* SimpleTwoWayBinding */;
+			targetProxy = A093A0E26F601F51F512C32F886C80DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0A32947934DF645972E5356B0E1FD899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9172C5F9886B1D87DA9142189905498 /* Pods-RandomatorDemoApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		57F0223DB16FB9911839E349B4F0E02E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87029E3B61DDB3719D77471E073F31D6 /* SimpleTabBarAnimations.release.xcconfig */;
+			baseConfigurationReference = D50BB61E0116F07DB2EE44A7758752BF /* SimpleTabBarAnimations.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -334,44 +510,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		65D4F5C2338460E932CD0BEB3D8F4D4A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1504AA243D1D11D23BC2E7617362D781 /* Pods-RandomatorDemoApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -437,6 +575,44 @@
 			};
 			name = Debug;
 		};
+		7A851FB52FA0D04103B2A548AA1BE3F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1504AA243D1D11D23BC2E7617362D781 /* Pods-RandomatorDemoApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -497,12 +673,10 @@
 			};
 			name = Release;
 		};
-		BE56A5A1ADEFAD39133FE6F894E45A14 /* Release */ = {
+		930A1868896C167FF30BF4D80BD6A449 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9172C5F9886B1D87DA9142189905498 /* Pods-RandomatorDemoApp.release.xcconfig */;
+			baseConfigurationReference = C78C127B55C1CDA34706CBB729C5FD7E /* SimpleTwoWayBinding.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -512,23 +686,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleTwoWayBinding/SimpleTwoWayBinding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleTwoWayBinding/SimpleTwoWayBinding-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RandomatorDemoApp/Pods-RandomatorDemoApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SimpleTwoWayBinding/SimpleTwoWayBinding.modulemap";
+				PRODUCT_MODULE_NAME = SimpleTwoWayBinding;
+				PRODUCT_NAME = SimpleTwoWayBinding;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A377FD80E353DAF81D646AC02450A3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81305392261C33BABD8750AFB058464F /* SimpleTwoWayBinding.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleTwoWayBinding/SimpleTwoWayBinding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleTwoWayBinding/SimpleTwoWayBinding-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SimpleTwoWayBinding/SimpleTwoWayBinding.modulemap";
+				PRODUCT_MODULE_NAME = SimpleTwoWayBinding;
+				PRODUCT_NAME = SimpleTwoWayBinding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -538,7 +746,7 @@
 		};
 		C6D9F8194F506BADD8521289306AA92F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 551885B87A056CE499C73F5F8ADCB39C /* SimpleTabBarAnimations.debug.xcconfig */;
+			baseConfigurationReference = A3A23FADCC658E65F603CAA31C987906 /* SimpleTabBarAnimations.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -584,11 +792,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F0D7C447761E0ABBFEBA81CA9AAB1E4 /* Build configuration list for PBXNativeTarget "Pods-RandomatorDemoApp" */ = {
+		7BA96EA2F9DBCF095B5B8CFA0F31CFA9 /* Build configuration list for PBXNativeTarget "SimpleTwoWayBinding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65D4F5C2338460E932CD0BEB3D8F4D4A /* Debug */,
-				BE56A5A1ADEFAD39133FE6F894E45A14 /* Release */,
+				930A1868896C167FF30BF4D80BD6A449 /* Debug */,
+				A377FD80E353DAF81D646AC02450A3D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -598,6 +806,15 @@
 			buildConfigurations = (
 				C6D9F8194F506BADD8521289306AA92F /* Debug */,
 				57F0223DB16FB9911839E349B4F0E02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE3D5F61FFC4A22896D10751F52679C /* Build configuration list for PBXNativeTarget "Pods-RandomatorDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A851FB52FA0D04103B2A548AA1BE3F5 /* Debug */,
+				0A32947934DF645972E5356B0E1FD899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
