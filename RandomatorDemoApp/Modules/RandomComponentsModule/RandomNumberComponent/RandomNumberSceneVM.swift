@@ -7,7 +7,17 @@
 //
 
 import Foundation
+import SimpleTwoWayBinding
+
+private struct RandomNumberValues {
+    static let minValue = 0
+    static let maxValue = 100
+}
 
 class RandomNumberSceneViewModel: RandomNumberSceneViewModelProtocol {
+    var randomNumber = Observable<Int>()
     
+    func generateRandomNumber() {
+        randomNumber.value = Int.random(in: RandomNumberValues.minValue...RandomNumberValues.maxValue)
+    }
 }

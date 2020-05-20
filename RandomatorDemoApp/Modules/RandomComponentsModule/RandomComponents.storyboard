@@ -14,9 +14,39 @@
                     <view key="view" contentMode="scaleToFill" id="b3v-KD-4Ya">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hku-r4-cKH">
+                                <rect key="frame" x="20" y="144" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD8-Gg-xKK">
+                                <rect key="frame" x="117" y="380" width="180" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="EGK-Cu-SQd"/>
+                                    <constraint firstAttribute="height" constant="60" id="zap-ZC-N7B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Generate"/>
+                                <connections>
+                                    <action selector="didTapOnButton:" destination="e82-ap-k3y" eventType="touchUpInside" id="t20-1w-B8B"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hku-r4-cKH" firstAttribute="top" secondItem="ILw-Yd-GKa" secondAttribute="top" constant="100" id="4Nk-gN-gQc"/>
+                            <constraint firstItem="hku-r4-cKH" firstAttribute="leading" secondItem="ILw-Yd-GKa" secondAttribute="leading" constant="20" id="MLS-JQ-SKL"/>
+                            <constraint firstItem="ILw-Yd-GKa" firstAttribute="trailing" secondItem="hku-r4-cKH" secondAttribute="trailing" constant="20" id="ORS-ar-aYR"/>
+                            <constraint firstItem="fD8-Gg-xKK" firstAttribute="centerX" secondItem="ILw-Yd-GKa" secondAttribute="centerX" id="g9o-iM-nyj"/>
+                            <constraint firstItem="fD8-Gg-xKK" firstAttribute="top" secondItem="hku-r4-cKH" secondAttribute="bottom" constant="200" id="wvC-I2-EBI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ILw-Yd-GKa"/>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="hku-r4-cKH" id="wCG-bB-TpO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGK-wB-Frb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

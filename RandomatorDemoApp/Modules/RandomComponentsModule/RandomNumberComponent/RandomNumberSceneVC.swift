@@ -7,17 +7,32 @@
 //
 
 import UIKit
+import SimpleTwoWayBinding
 
 protocol RandomNumberSceneViewModelProtocol {
+    var randomNumber: Observable<Int> { get }
     
+    func generateRandomNumber()
 }
 
 class RandomNumberSceneVC: UIViewController {
     
     private var viewModel: RandomNumberSceneViewModelProtocol!
+    @IBOutlet private weak var numberLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupBindings()
+    }
+    
+    @IBAction private func didTapOnButton(_ sender: Any) {
+        viewModel.generateRandomNumber()
+    }
+    
+    private func setupBindings() {
+        viewModel.randomNumber.bind { [weak self] _, value  in
+            self?.numberLabel.text = "\(value)"
+        }
     }
     
     private static func configureTabBarIcon() -> UITabBarItem {
