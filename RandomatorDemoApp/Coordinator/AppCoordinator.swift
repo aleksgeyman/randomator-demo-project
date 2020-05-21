@@ -46,8 +46,8 @@ extension AppCoordinator: AppSceneDelegate {
     
     func shouldShowRandomComponentScene(_ randomComponent: RandomComponents) {
         let rootVC = TabBarVC.instantiateFromStoryboard()
-        self.window?.rootViewController = rootVC
-        self.window?.makeKeyAndVisible()
+        window?.rootViewController = rootVC
+        window?.makeKeyAndVisible()
         let tabCoordinator = TabBarCoordinator(rootViewController: rootVC, randomComponent: randomComponent)
         addChildCoordinator(tabCoordinator)
         tabCoordinator.start()
