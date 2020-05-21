@@ -10,6 +10,8 @@ import Foundation
 import SimpleTwoWayBinding
 
 class ResultsSceneViewModel: ResultsSceneViewModelProtocol {
+    typealias numberCellConfigurator = ViewConfigurator<NumberResultTableViewCell>
+    typealias diceCellConfigurator = ViewConfigurator<DiceResultTableViewCell>
     
     var results = Observable<[ResultEntityModel]>()
     private var randomComponent: RandomComponents
@@ -26,7 +28,7 @@ class ResultsSceneViewModel: ResultsSceneViewModelProtocol {
     
     // MARK: DataSource
     var reuseIdentifiers: [String] {
-        return ["\(ViewResultTableViewCell.self)"]
+        return ["\(NumberResultTableViewCell.self)", "\(DiceResultTableViewCell.self)"]
     }
     
     var sectionsNumber: Int {
@@ -39,12 +41,20 @@ class ResultsSceneViewModel: ResultsSceneViewModelProtocol {
     
     func viewConfigurator(at index: Int, in section: Int) -> Configurator {
         let resultData: ResultDataModel
+        let viewConfigurator: Configurator
         if let result = results.value?[index] as? ResultDataModel {
             resultData = result
         } else {
-            resultData = ResultDataModel(value: "one", date: "Today")
+            resultData = ResultDataModel(value: "", date: "")
         }
         
-        return ViewConfigurator<ViewResultTableViewCell>(data: resultData)
+        switch randomComponent {
+        case .dice:
+            viewConfigurator = diceCellConfigurator(data: resultData)
+        default:
+            viewConfigurator = numberCellConfigurator(data: resultData)
+        }
+        
+        return viewConfigurator
     }
 }

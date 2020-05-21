@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewResultTableViewCell: UITableViewCell, Configurable {
+class NumberResultTableViewCell: UITableViewCell, Configurable {
 
     @IBOutlet private weak var valueLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    func configure(with data: ResultDataModel) {
+    func configure(with data: ResultEntityModel) {
         valueLabel.text = data.value
         dateLabel.text = data.date
     }

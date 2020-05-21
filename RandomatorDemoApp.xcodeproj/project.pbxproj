@@ -11,8 +11,8 @@
 		C7039EE72473CF6300A8845B /* ResultsSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7039EE62473CF6300A8845B /* ResultsSceneVC.swift */; };
 		C7039EE92473CF7B00A8845B /* ResultsSceneVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7039EE82473CF7B00A8845B /* ResultsSceneVM.swift */; };
 		C7039EEB2473CF8F00A8845B /* ResultsScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7039EEA2473CF8F00A8845B /* ResultsScene.storyboard */; };
-		C7039EEF2473CFD800A8845B /* ViewResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7039EED2473CFD800A8845B /* ViewResultTableViewCell.swift */; };
-		C7039EF02473CFD800A8845B /* ViewResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7039EEE2473CFD800A8845B /* ViewResultTableViewCell.xib */; };
+		C7039EEF2473CFD800A8845B /* NumberResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7039EED2473CFD800A8845B /* NumberResultTableViewCell.swift */; };
+		C7039EF02473CFD800A8845B /* NumberResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7039EEE2473CFD800A8845B /* NumberResultTableViewCell.xib */; };
 		C7039EF22474270300A8845B /* RandomComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7039EF12474270300A8845B /* RandomComponents.storyboard */; };
 		C7039EF52474276200A8845B /* RandomNumberSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7039EF42474276200A8845B /* RandomNumberSceneVC.swift */; };
 		C7039EF72474283C00A8845B /* RandomNumberSceneVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7039EF62474283C00A8845B /* RandomNumberSceneVM.swift */; };
@@ -36,6 +36,8 @@
 		C7915B09247552220068FCDF /* BaseRandomComponentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7915B08247552220068FCDF /* BaseRandomComponentVM.swift */; };
 		C7915B0C247563980068FCDF /* DiceSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7915B0B247563980068FCDF /* DiceSceneVC.swift */; };
 		C7915B0E247563A20068FCDF /* DiceSceneVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7915B0D247563A20068FCDF /* DiceSceneVM.swift */; };
+		C798D0BE247656090089878B /* DiceResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798D0BC247656090089878B /* DiceResultTableViewCell.swift */; };
+		C798D0BF247656090089878B /* DiceResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C798D0BD247656090089878B /* DiceResultTableViewCell.xib */; };
 		C7E7A69A2472C7BD0027322C /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7A6992472C7BD0027322C /* Configurator.swift */; };
 		C7E7A69C2472C7C50027322C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7A69B2472C7C50027322C /* DataSource.swift */; };
 		C7E7A6A02472CC2D0027322C /* RandomComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7A69E2472CC2D0027322C /* RandomComponentTableViewCell.swift */; };
@@ -52,8 +54,8 @@
 		C7039EE62473CF6300A8845B /* ResultsSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsSceneVC.swift; sourceTree = "<group>"; };
 		C7039EE82473CF7B00A8845B /* ResultsSceneVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsSceneVM.swift; sourceTree = "<group>"; };
 		C7039EEA2473CF8F00A8845B /* ResultsScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultsScene.storyboard; sourceTree = "<group>"; };
-		C7039EED2473CFD800A8845B /* ViewResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewResultTableViewCell.swift; sourceTree = "<group>"; };
-		C7039EEE2473CFD800A8845B /* ViewResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewResultTableViewCell.xib; sourceTree = "<group>"; };
+		C7039EED2473CFD800A8845B /* NumberResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberResultTableViewCell.swift; sourceTree = "<group>"; };
+		C7039EEE2473CFD800A8845B /* NumberResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberResultTableViewCell.xib; sourceTree = "<group>"; };
 		C7039EF12474270300A8845B /* RandomComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RandomComponents.storyboard; sourceTree = "<group>"; };
 		C7039EF42474276200A8845B /* RandomNumberSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberSceneVC.swift; sourceTree = "<group>"; };
 		C7039EF62474283C00A8845B /* RandomNumberSceneVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberSceneVM.swift; sourceTree = "<group>"; };
@@ -79,6 +81,8 @@
 		C7915B08247552220068FCDF /* BaseRandomComponentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRandomComponentVM.swift; sourceTree = "<group>"; };
 		C7915B0B247563980068FCDF /* DiceSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceSceneVC.swift; sourceTree = "<group>"; };
 		C7915B0D247563A20068FCDF /* DiceSceneVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceSceneVM.swift; sourceTree = "<group>"; };
+		C798D0BC247656090089878B /* DiceResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceResultTableViewCell.swift; sourceTree = "<group>"; };
+		C798D0BD247656090089878B /* DiceResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiceResultTableViewCell.xib; sourceTree = "<group>"; };
 		C7E7A6992472C7BD0027322C /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		C7E7A69B2472C7C50027322C /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		C7E7A69E2472CC2D0027322C /* RandomComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomComponentTableViewCell.swift; sourceTree = "<group>"; };
@@ -112,8 +116,10 @@
 		C7039EEC2473CFA200A8845B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C7039EED2473CFD800A8845B /* ViewResultTableViewCell.swift */,
-				C7039EEE2473CFD800A8845B /* ViewResultTableViewCell.xib */,
+				C7039EED2473CFD800A8845B /* NumberResultTableViewCell.swift */,
+				C7039EEE2473CFD800A8845B /* NumberResultTableViewCell.xib */,
+				C798D0BC247656090089878B /* DiceResultTableViewCell.swift */,
+				C798D0BD247656090089878B /* DiceResultTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,8 +348,9 @@
 				C7039EEB2473CF8F00A8845B /* ResultsScene.storyboard in Resources */,
 				C7E7A6A12472CC2D0027322C /* RandomComponentTableViewCell.xib in Resources */,
 				C733EB1324725D7900274445 /* LaunchScreen.storyboard in Resources */,
-				C7039EF02473CFD800A8845B /* ViewResultTableViewCell.xib in Resources */,
+				C7039EF02473CFD800A8845B /* NumberResultTableViewCell.xib in Resources */,
 				C7039EF22474270300A8845B /* RandomComponents.storyboard in Resources */,
+				C798D0BF247656090089878B /* DiceResultTableViewCell.xib in Resources */,
 				C7039EFE24742A3A00A8845B /* MainNavigation.storyboard in Resources */,
 				C733EB1024725D7900274445 /* Assets.xcassets in Resources */,
 				C70A4DD12472664F00E70996 /* SelectScene.storyboard in Resources */,
@@ -404,11 +411,12 @@
 				C7039EE72473CF6300A8845B /* ResultsSceneVC.swift in Sources */,
 				C7E7A69A2472C7BD0027322C /* Configurator.swift in Sources */,
 				C7039EF52474276200A8845B /* RandomNumberSceneVC.swift in Sources */,
+				C798D0BE247656090089878B /* DiceResultTableViewCell.swift in Sources */,
 				C70A4DD32472666700E70996 /* SelectSceneVC.swift in Sources */,
 				C7E7A6A52473B6990027322C /* RandomComponentsEnum.swift in Sources */,
 				C70A4DD72472668B00E70996 /* SelectSceneCoordinator.swift in Sources */,
 				C7915B09247552220068FCDF /* BaseRandomComponentVM.swift in Sources */,
-				C7039EEF2473CFD800A8845B /* ViewResultTableViewCell.swift in Sources */,
+				C7039EEF2473CFD800A8845B /* NumberResultTableViewCell.swift in Sources */,
 				C7E7A69C2472C7C50027322C /* DataSource.swift in Sources */,
 				C7039EE22473BC4600A8845B /* Coordinatable.swift in Sources */,
 				C7039EFC24742A2700A8845B /* TabBarVC.swift in Sources */,
