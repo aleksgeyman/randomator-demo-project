@@ -34,7 +34,15 @@ extension BaseRandomComponentViewModelProtocol {
     }
     
     private func saveResult(result: String) {
-        let result = ResultDataModel(value: result, date: "Today")
+        let result = ResultDataModel(value: result, date: getCurrentTime())
         recentResultsRepository.addRecentResult(for: randomComponent, result: result)
+    }
+    
+    private func getCurrentTime() -> String {
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone.current
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        return dateFormatter.string(from: date)
     }
 }

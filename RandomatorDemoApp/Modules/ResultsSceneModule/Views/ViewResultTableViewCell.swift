@@ -11,9 +11,11 @@ import UIKit
 class ViewResultTableViewCell: UITableViewCell, Configurable {
 
     @IBOutlet private weak var valueLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
     func configure(with data: ResultDataModel) {
-        valueLabel.text = "\(data.value)"
+        valueLabel.text = data.value
+        dateLabel.text = data.date
     }
 }
 
