@@ -9,7 +9,12 @@
 import UIKit
 import SimpleTwoWayBinding
 
+protocol BaseRandomComponentSceneDelegate: Coordinator {
+    func randomComponentSceneShouldReturnToSelectScene()
+}
+
 protocol BaseRandomComponentViewModelProtocol: class {
+    var delegate: BaseRandomComponentSceneDelegate { get }
     var randomComponent: RandomComponents { get }
     var randomValue: Observable<String> { get }
     var recentResultsRepository: RecentResultsRepositoryProtocol { get }
@@ -24,6 +29,7 @@ class BaseRandomComponentVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBindings()
+        configureReturnToSelectButton()
     }
     
     func setupBindings() {
@@ -32,6 +38,18 @@ class BaseRandomComponentVC: UIViewController {
     
     class func configureTabBarIcon() -> UITabBarItem {
         preconditionFailure("\(#function) should be overriden in child class!")
+    }
+    
+    private func configureReturnToSelectButton() {
+        let button = UIButton(frame: CGRect(x: 5, y: 44, width: 180, height: 40))
+        button.setTitle("Select Component", for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+        button.addTarget(self, action: #selector(didTapOnReturnToSelectButton), for: .touchUpInside)
+        view.addSubview(button)
+    }
+    
+    @objc private func didTapOnReturnToSelectButton() {
+        viewModel.delegate.randomComponentSceneShouldReturnToSelectScene()
     }
 }
 

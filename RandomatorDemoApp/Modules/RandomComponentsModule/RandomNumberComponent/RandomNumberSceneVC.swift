@@ -36,9 +36,11 @@ class RandomNumberSceneVC: BaseRandomComponentVC {
 // MARK: Scene Factory
 extension RandomNumberSceneVC {
     
-    static func create() -> UIViewController {
+    static func create(delegate: BaseRandomComponentSceneDelegate) -> UIViewController {
         let viewController = Self.instantiateFromStoryboard()
-        viewController.viewModel = RandomNumberSceneViewModel(randomComponent: RandomComponents.number, recentResultsRepository: RecentResultsRepository())
+        viewController.viewModel = RandomNumberSceneViewModel(randomComponent: RandomComponents.number,
+                                                              recentResultsRepository: RecentResultsRepository(),
+                                                              delegate: delegate)
         viewController.tabBarItem = configureTabBarIcon()
         return viewController
     }

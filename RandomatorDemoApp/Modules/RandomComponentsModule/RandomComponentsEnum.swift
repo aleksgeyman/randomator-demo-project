@@ -13,13 +13,13 @@ enum RandomComponents: String, CaseIterable {
     case dice = "Roll Dice"
     case quote = "Random Quote"
     
-    var controller: UIViewController {
+    func createControllerWith(_ delegate: BaseRandomComponentSceneDelegate) -> UIViewController {
         let vc: UIViewController
         switch self {
         case .number:
-            vc = RandomNumberSceneVC.create()
+            vc = RandomNumberSceneVC.create(delegate: delegate)
         case .dice:
-            vc = DiceSceneVC.create()
+            vc = DiceSceneVC.create(delegate: delegate)
         default:
             vc = UIViewController()
         }

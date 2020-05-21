@@ -10,12 +10,16 @@ import Foundation
 import SimpleTwoWayBinding
 
 class DiceSceneViewModel: BaseRandomComponentViewModelProtocol {
-    var randomComponent: RandomComponents
-    var randomValue = Observable<String>()
-    var recentResultsRepository: RecentResultsRepositoryProtocol
+    unowned let delegate: BaseRandomComponentSceneDelegate
+    let randomComponent: RandomComponents
+    let randomValue = Observable<String>()
+    let recentResultsRepository: RecentResultsRepositoryProtocol
     
-    init(randomComponent: RandomComponents, recentResultsRepository: RecentResultsRepositoryProtocol) {
+    init(randomComponent: RandomComponents,
+         recentResultsRepository: RecentResultsRepositoryProtocol,
+         delegate: BaseRandomComponentSceneDelegate) {
         self.randomComponent = randomComponent
         self.recentResultsRepository = recentResultsRepository
+        self.delegate = delegate
     }
 }

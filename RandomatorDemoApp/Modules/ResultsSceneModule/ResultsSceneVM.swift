@@ -13,9 +13,9 @@ class ResultsSceneViewModel: ResultsSceneViewModelProtocol {
     typealias numberCellConfigurator = ViewConfigurator<NumberResultTableViewCell>
     typealias diceCellConfigurator = ViewConfigurator<DiceResultTableViewCell>
     
-    var results = Observable<[ResultEntityModel]>()
-    private var randomComponent: RandomComponents
-    private var recentResultsRepository: RecentResultsRepositoryProtocol
+    let results = Observable<[ResultEntityModel]>()
+    private let randomComponent: RandomComponents
+    private let recentResultsRepository: RecentResultsRepositoryProtocol
     
     init(randomComponent: RandomComponents, recentResultsRepository: RecentResultsRepositoryProtocol) {
         self.randomComponent = randomComponent
