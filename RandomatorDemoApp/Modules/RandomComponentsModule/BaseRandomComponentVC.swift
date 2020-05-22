@@ -20,6 +20,7 @@ protocol BaseRandomComponentViewModelProtocol: class {
     var recentResultsRepository: RecentResultsRepositoryProtocol { get }
     
     func generateRandomValue()
+    func openSelectScene()
 }
 
 class BaseRandomComponentVC: UIViewController {
@@ -49,7 +50,7 @@ class BaseRandomComponentVC: UIViewController {
     }
     
     @objc private func didTapOnReturnToSelectButton() {
-        viewModel.delegate.randomComponentSceneShouldReturnToSelectScene()
+        viewModel.openSelectScene()
     }
 }
 

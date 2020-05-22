@@ -33,6 +33,10 @@ extension BaseRandomComponentViewModelProtocol {
         saveResult(result: valueAsString)
     }
     
+    func openSelectScene() {
+        delegate.randomComponentSceneShouldReturnToSelectScene()
+    }
+    
     private func saveResult(result: String) {
         let result = ResultDataModel(value: result, date: getCurrentTime())
         recentResultsRepository.addRecentResult(for: randomComponent, result: result)
